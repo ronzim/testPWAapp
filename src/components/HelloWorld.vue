@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
+
 defineProps<{
   msg: string
 }>()
@@ -6,6 +8,7 @@ defineProps<{
 
 <template>
   <v-chip prepend-icon="$vuetify" variant="text"> Chip </v-chip>
+  <RouterLink to="/main">Main</RouterLink>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
